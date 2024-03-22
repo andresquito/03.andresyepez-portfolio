@@ -6,7 +6,7 @@ const NavBar = () => {
 
   const links = [
     {
-      link: "About",
+      link: "Professional Resume",
       id: 1,
     },
     {
@@ -25,12 +25,12 @@ const NavBar = () => {
 
   return (
     <div
-      className={[
+      className={ [
         "absolute",
         !isMenuopen
           ? " z-[300] absolute w-[69px] p-10 left-4 h-[47px]"
-          : " items-center justify-around flex flex-col z-[300] fixed w-screen h-screen bg-[#2B2B29]",
-      ]}
+          : " items-center justify-normal gap-20 flex flex-col z-[300] fixed w-screen h-screen bg-[#2B2B29]",
+      ] }
     >
       <Menu
         isMenuOpen={isMenuopen}
@@ -40,7 +40,7 @@ const NavBar = () => {
       {isMenuopen &&
         links.map((l) => (
           <Link
-            className="text-[30px] text-white cursor-pointer"
+            className="text-[25px] text-white cursor-pointer"
             onClick={() => setIsMenuOpen(false)}
             to={l.link}
             key={l.id}

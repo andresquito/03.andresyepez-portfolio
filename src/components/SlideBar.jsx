@@ -21,7 +21,7 @@ const SlideBar = () => {
           GitHub <AiFillGithub size={30} />
         </>
       ),
-      href: "",
+      href: "https://github.com/andresquito",
     },
     {
       id: 3,
